@@ -245,6 +245,9 @@ const HeaderWapper = styled.div`
   background-image: url("/images/backgrounds/headerbackground@2x.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  @media (max-width: 768px) {
+    background-size: cover;
+  }
 `
 
 const MenuWrapper = styled.div`
@@ -254,6 +257,9 @@ const MenuWrapper = styled.div`
   margin: auto;
   margin-top: 25px;
   transform: translate(0, 17px);
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `
 
 const MenuItem = styled.div`

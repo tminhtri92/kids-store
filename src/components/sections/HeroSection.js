@@ -48,7 +48,7 @@ const catalogData = [
 const HeroSection = () => {
   return (
     <Wrapper>
-      <Section>
+      <Section style={{ flexWrap: "wrap" }}>
         <CatalogueWrapper>
           <CatalogueTitle>DANH MỤC SẢN PHẨM</CatalogueTitle>
           <CatalogueContentWrapper>
@@ -474,6 +474,9 @@ const CollectionProfile = styled.div`
 const CollectionItem = styled.div`
   width: 14%;
   border-right: 1px dashed grey;
+  @media (max-width: 768px) {
+    width: 50%;
+  }
 `
 
 const CollectionImage = styled.img`
@@ -483,6 +486,9 @@ const CollectionOneContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   border: dashed 1px black;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `
 const ColecctionTitleItem = styled.div`
   z-index: 100;
@@ -577,10 +583,16 @@ const CatalogueWrapper = styled.div`
   padding-left: 2px;
   padding-right: 2px;
   padding-bottom: 2px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 const MainBannerWrapper = styled.div`
   width: 75%;
   margin-left: 7px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 const CatalogueItem = styled.li`
   padding-bottom: 7px;
